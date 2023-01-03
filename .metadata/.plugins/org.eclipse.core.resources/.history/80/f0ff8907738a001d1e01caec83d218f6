@@ -1,0 +1,5 @@
+package com.jdc.ioc.bean.test;
+
+public class HelloBeanTest {
+
+}

@@ -1,0 +1,6 @@
+package com.jdc.test.di;
+
+public class TestClient {
+
+	Client client;
+}

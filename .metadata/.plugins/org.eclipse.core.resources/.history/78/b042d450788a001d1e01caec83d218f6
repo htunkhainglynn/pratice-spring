@@ -1,0 +1,8 @@
+package com.jdc.ioc.bean;
+
+public class HelloBean {
+
+	public void greet() {
+		System.out.println("hello, baan!");
+	}
+}

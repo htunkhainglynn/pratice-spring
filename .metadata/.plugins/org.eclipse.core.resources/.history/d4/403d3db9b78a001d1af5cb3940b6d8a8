@@ -1,0 +1,10 @@
+package com.jdc.ioc.bean;
+
+import org.springframework.stereotype.Component;
+
+public class BeanFactory {
+
+	public static HelloBean create() {
+		return new HelloBean();
+	}
+}

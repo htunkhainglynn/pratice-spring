@@ -1,0 +1,11 @@
+package com.jdc.ioc.bean;
+
+import org.springframework.stereotype.Component;
+
+@Component("hello" "bean")
+public class HelloBean {
+
+	public void greet() {
+		System.out.println("hello, bean!");
+	}
+}

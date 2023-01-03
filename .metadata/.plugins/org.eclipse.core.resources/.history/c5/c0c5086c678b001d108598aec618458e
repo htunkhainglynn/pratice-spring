@@ -1,0 +1,5 @@
+package com.jdc.example.di;
+
+public class Client {
+
+}

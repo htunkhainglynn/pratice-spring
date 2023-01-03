@@ -1,0 +1,5 @@
+package com.jdc.ioc.bean;
+
+public class BeanFactory {
+
+}

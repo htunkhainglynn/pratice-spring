@@ -1,0 +1,14 @@
+package com.jdc.example.di;
+
+public class Client {
+
+	Service myService;
+	
+	public Client() {
+		myService = new CustomService();
+	}
+	
+	public void doWork() {
+		myService.doWork();
+	}
+}

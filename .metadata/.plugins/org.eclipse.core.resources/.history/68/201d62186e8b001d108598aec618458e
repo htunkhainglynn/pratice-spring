@@ -1,0 +1,10 @@
+package com.jdc.example.di;
+
+public class ClientFactory {
+
+	public Client generateClient() {
+		Service service = new CustomService();
+		Client client = new Client(service);
+		return client;
+	}
+}

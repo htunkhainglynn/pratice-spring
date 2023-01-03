@@ -1,0 +1,5 @@
+package com.jdc.example;
+
+public class AppConfig {
+
+}

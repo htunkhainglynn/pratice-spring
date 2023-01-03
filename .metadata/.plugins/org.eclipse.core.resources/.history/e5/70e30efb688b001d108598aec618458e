@@ -1,0 +1,17 @@
+package com.jdc.test.di;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jdc.example.di.Client;
+
+public class TestClient {
+	
+	@Autowired
+	Client client;
+	
+	@Test
+	void test() {
+		
+	}
+}

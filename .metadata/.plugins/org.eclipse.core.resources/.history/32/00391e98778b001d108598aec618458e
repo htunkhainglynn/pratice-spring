@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!--	<bean id="clientFactory" class="com.jdc.example.di.ClientFactory"></bean>
+	  -->
+	<bean id="customService" class="com.jdc.example.di.CustomService"></bean>
+	<bean id="defaultService" class="com.jdc.example.di.DefaultService"></bean>
+	<!--  <bean class="com.jdc.example.di.Client">
+		<constructor-arg ref="customService"></constructor-arg>
+	</bean> -->
+	<bean id="client" factory-bean="clientFactory" factory-method="generateClient">
+		<constructor-arg ref="defaultService"></constructor-arg>
+	</bean>
+	<!-- 
+	<bean class="com.jdc.example.di.Client" p:service-ref="defaultService"></bean>
+	-->
+	
+</beans>

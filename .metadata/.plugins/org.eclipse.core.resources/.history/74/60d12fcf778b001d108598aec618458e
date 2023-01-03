@@ -1,0 +1,22 @@
+package com.jdc.example.di;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Client {
+
+	Service service;
+	
+	public Client(Service service) {
+		this.service = service;
+	}
+	
+//	public void setService(Service service) {
+//		this.service = service;
+//	}
+
+	public void doWork() {
+		service.doWork();
+	}
+}

@@ -1,0 +1,21 @@
+package com.jdc.example.di;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Client {
+
+	@Autowired
+	Service service;
+	
+//	public Client(Service service) {
+//		this.service = service;
+//	}
+	
+//	public void setService(Service service) {
+//		this.service = service;
+//	}
+
+	public void doWork() {
+		service.doWork();
+	}
+}

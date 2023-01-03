@@ -1,0 +1,13 @@
+package com.jdc.example.di;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class CustomService implements Service {
+
+	@Override
+	public void doWork() {
+		System.out.println("Custom service is working!");
+	}
+
+}

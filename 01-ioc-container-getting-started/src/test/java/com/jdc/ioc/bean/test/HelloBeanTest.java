@@ -1,0 +1,32 @@
+package com.jdc.ioc.bean.test;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import com.jdc.ioc.bean.HelloBean;
+
+public class HelloBeanTest {
+
+	@Test
+	void test() {
+		try (var context = new AnnotationConfigApplicationContext()) {
+			context.scan("com.jdc.ioc.bean");
+			context.refresh();
+			
+			var bean = context.getBean("hello", HelloBean.class);
+			bean.greet();
+		}
+	}
+	
+//	@Test
+//	void test() {
+//		try (var context = new ClassPathXmlApplicationContext("classpath:/context.xml")) {
+//			context.refresh();
+//			var bean = context.getBean(HelloBean.class);
+//			bean.greet();
+//		}
+//	}
+}
