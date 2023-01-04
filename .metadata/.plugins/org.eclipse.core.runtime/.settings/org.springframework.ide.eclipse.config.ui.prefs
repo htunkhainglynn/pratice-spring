@@ -1,3 +1,5 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/02-com.jdc.example.di/src/main/resources/autowire-mode.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/com.jdc.example.aop/src/main/resources/context-aop.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/com.jdc.example.aop/src/main/resources/context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/ioc-container-getting-started/src/main/resources/context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 eclipse.preferences.version=1

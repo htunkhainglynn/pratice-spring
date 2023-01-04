@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/akohtun/Documents/spring/02-com.jdc.example.di"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -43,11 +44,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="03-getting-started-aop"/>
 			<item value=" com.jdc.fullstack"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="com.jdc.example.aop"/>
 			<item value="ioc-container-getting-started"/>
 		</list>
 		<list key="projectNameTemplate">
